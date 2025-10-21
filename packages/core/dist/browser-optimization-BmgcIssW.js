@@ -1,0 +1,2 @@
+import { a as IntersectionObserverPool, c as browserOptimizations, i as HardwareAcceleration, l as initializeBrowserOptimizations, n as BrowserOptimizations, o as OptimizedEventManager, r as CriticalRenderingOptimizer, s as RAFScheduler, t as BrowserFeatures } from "./browser-optimization-Aw-vm1Jr.js";
+export { BrowserFeatures, BrowserOptimizations, CriticalRenderingOptimizer, HardwareAcceleration, IntersectionObserverPool, OptimizedEventManager, RAFScheduler, browserOptimizations, initializeBrowserOptimizations };

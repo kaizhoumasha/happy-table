@@ -1,0 +1,13 @@
+@config "../tailwind.config.ts";
+@import 'tailwindcss';
+
+/* Tailwind v4 最佳实践：
+   - 依赖 Preflight，尽量减少全局样式
+   - 仅保留与 UA/系统相关的最小设置
+*/
+@layer base {
+  html,
+  :host {
+    color-scheme: light dark;
+  }
+}

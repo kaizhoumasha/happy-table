@@ -1,0 +1,1 @@
+const e=require(`./browser-optimization-BvGvv3w1.cjs`);exports.initializeBrowserOptimizations=e.initializeBrowserOptimizations;

@@ -1,0 +1,40 @@
+{
+  "name": "@happy-table/vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19",
+    "pnpm": ">=8"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @happy-table/demo dev",
+    "build": "pnpm -r build",
+    "build:core": "pnpm --filter @happy-table/core build",
+    "build:demo": "pnpm --filter @happy-table/demo build",
+    "preview": "pnpm --filter @happy-table/demo preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "code:fix": "pnpm format && pnpm lint:fix",
+    "test": "pnpm -r test",
+    "test:core": "pnpm --filter @happy-table/core test",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@vue/eslint-config-typescript": "^14.6.0",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.5.0",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.1"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.1.12"
+  }
+}

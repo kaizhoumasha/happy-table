@@ -1,0 +1,55 @@
+{
+  "name": "@happy-table/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/happy-table.cjs.js",
+  "module": "./dist/happy-table.es.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/happy-table.es.js",
+      "require": "./dist/happy-table.cjs.js"
+    },
+    "./style.css": "./dist/style.css",
+    "./auto.css": "./dist/auto.css",
+    "./internal": {
+      "types": "./dist/types/internal.d.ts",
+      "import": "./dist/happy-table.es.js",
+      "require": "./dist/happy-table.cjs.js"
+    }
+  },
+  "files": [
+    "dist/**"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "vue": ">=3.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/language-core": "~3.0.8",
+    "@vue/test-utils": "^2.4.1",
+    "@vue/tsconfig": "^0.8.1",
+    "jsdom": "^22.1.0",
+    "tailwindcss": "^4.1.13",
+    "unplugin-dts": "^1.0.0-beta.6",
+    "vite": "npm:rolldown-vite@7.1.12",
+    "vitest": "^1.6.0",
+    "vue": ">=3.3.0",
+    "vue-dts": "^0.2.0",
+    "vue-tsc": "^3.0.7"
+  }
+}

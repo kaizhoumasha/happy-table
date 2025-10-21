@@ -1,0 +1,1 @@
+require(`./logger-DYZU5RTs.cjs`);const e=require(`./column-management-plugin-BXQSSUQ_.cjs`);exports.columnManagementPlugin=e.columnManagementPlugin;
